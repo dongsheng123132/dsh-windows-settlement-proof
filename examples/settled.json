@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "proofId": "rollout-42",
+  "evaluationTime": "2026-08-26T02:00:00.000Z",
+  "change": {
+    "targetHash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "targetRevision": "revision-42",
+    "requestSha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "approvalSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "desiredStateSha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+    "requestedAt": "2026-08-26T00:00:00.000Z",
+    "approvedAt": "2026-08-26T00:10:00.000Z"
+  },
+  "policy": { "maxObservationAgeMs": 7200000, "minimumRestartEpoch": 1, "requireSuccessEvent": true },
+  "expectedSurfaces": [
+    { "surface": "service-config", "expectedStateSha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee" },
+    { "surface": "service-runtime", "expectedStateSha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff" },
+    { "surface": "event-record", "expectedStateSha256": "1111111111111111111111111111111111111111111111111111111111111111" }
+  ],
+  "observations": [
+    { "id": "service-config-1", "surface": "service-config", "targetHash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "targetRevision": "revision-42", "desiredStateSha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd", "observedStateSha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee", "sourceSha256": "2222222222222222222222222222222222222222222222222222222222222222", "capturedAt": "2026-08-26T01:00:00.000Z", "restartEpoch": 1, "outcome": "applied" },
+    { "id": "service-runtime-1", "surface": "service-runtime", "targetHash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "targetRevision": "revision-42", "desiredStateSha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd", "observedStateSha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff", "sourceSha256": "3333333333333333333333333333333333333333333333333333333333333333", "capturedAt": "2026-08-26T01:00:00.000Z", "restartEpoch": 1, "outcome": "applied" },
+    { "id": "event-record-1", "surface": "event-record", "targetHash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "targetRevision": "revision-42", "desiredStateSha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd", "observedStateSha256": "1111111111111111111111111111111111111111111111111111111111111111", "sourceSha256": "4444444444444444444444444444444444444444444444444444444444444444", "capturedAt": "2026-08-26T01:00:00.000Z", "restartEpoch": 1, "outcome": "applied" }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "dsh-windows-settlement-proof",
+  "version": "0.1.0",
+  "description": "Content-addressed proof that an approved Windows control-plane change settled across required surfaces",
+  "author": {
+    "name": "dongsheng123132"
+  },
+  "homepage": "https://github.com/dongsheng123132/dsh-windows-settlement-proof",
+  "repository": "https://github.com/dongsheng123132/dsh-windows-settlement-proof",
+  "license": "MIT",
+  "keywords": ["deepseek-harness", "dsh", "windows", "settlement", "evidence"],
+  "interface": {
+    "displayName": "DSH Windows Settlement Proof",
+    "shortDescription": "Verify redacted Windows change settlement receipts.",
+    "longDescription": "Verifies explicit offline receipts for Windows service, task, event and policy surfaces against an approved content-addressed lock without executing commands or returning Windows payloads.",
+    "developerName": "dongsheng123132",
+    "category": "Developer Tools",
+    "capabilities": ["MCP tools", "DSH tools", "offline verification"],
+    "defaultPrompt": "Verify this explicit Windows settlement manifest and report only hashed evidence."
+  },
+  "mcpServers": "./.mcp.json"
+}
