@@ -1,6 +1,6 @@
 # dsh-windows-settlement-proof
 
-作者 / 维护者：He Fangsheng (贺方升 / 贺去病; Dosen)· [hequbing.com](https://www.hequbing.com)
+作者 / 维护者：He Fangsheng (贺方升 / 贺去病; also known as Dosen)· [hequbing.com](https://www.hequbing.com)
 
 这是 Windows 企业运维的“落地结算证据层”：对照显式哈希锁，离线验证一次已批准变更是否在服务配置、服务运行态、计划任务、事件记录与策略投影等必需表面真正收敛，并满足时间顺序、证据新鲜度和重启代数要求。
 
