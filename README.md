@@ -1,5 +1,7 @@
 # dsh-windows-settlement-proof
 
+**Maintainer / Author：贺去病 (He Fangsheng / Dosen) · [hequbing.com](https://www.hequbing.com)**
+
 Offline, content-addressed evidence that an approved Windows control-plane change actually settled across every required surface. It compares explicit redacted receipts for Service Control Manager, Task Scheduler, Event Log and policy projections against a fixed hash lock, chronology, freshness and restart-epoch policy.
 
 This is a verifier, not an operator. It never runs PowerShell, `sc.exe`, registry commands or arbitrary subprocesses; it never reads Windows services, task definitions, Event XML or business payloads. Reports contain only public counts, booleans and SHA-256 values.
